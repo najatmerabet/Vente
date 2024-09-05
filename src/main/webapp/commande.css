@@ -1,0 +1,57 @@
+/* Styles pour la table */
+.mytable{
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+.mytable th,.mytable td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+
+}
+
+h2{
+    color: #ed3c0d;
+    position: center;
+    margin-left: 500px;
+}
+/* Style pour les lignes de quantité dépassée */
+.quantite-depasse {
+    border-color: red;
+}
+
+/* Styles pour le formulaire et le bouton */
+form {
+    margin-bottom: 20px;
+}
+span{
+
+}
+
+button[type="submit"] {
+
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style pour le lien */
+a {
+    color: #4CAF50;
+   text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+a:hover {
+    background-color:#4CAF50;
+}
+#comm {
+    background-color:  #f4f4f4;
+    padding: 20px;
+}

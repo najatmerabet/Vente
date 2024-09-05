@@ -1,0 +1,36 @@
+@charset "ISO-8859-1";
+section{
+	  margin-top: 100px;
+	  
+	
+}
+container{
+  margin-top: 5px;
+  
+	background-color:blue;
+}
+container1{
+  margin-top: 50px;
+}
+h2{
+  margin-top: 10px;
+  text-align:center;
+}
+table{
+	  margin-top: 10px;
+	  margin-left: 10px;
+	
+}
+cllasse{
+	border-radius:20px;
+}
+flex{
+	display:flex;
+	  float: left;
+	
+}
+fl {
+		display:flex;
+		  float: right;
+	
+}

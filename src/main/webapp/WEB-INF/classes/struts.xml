@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+    <package name="default" extends="struts-default">
+    <!-- l'action pour connecter a la base de donnees -->
+        <action name="login" method="execute" class="action.LoginUser">
+            <result name="success">/home.jsp</result>
+            <result name="error">/Index.jsp</result>
+        </action>
+        <!-- L action d'enregister les inscrits -->
+        <action name="Register" method="enregistrer" class="action.Register">
+            <result name="inscrit">/Index.jsp</result>
+            <result name="refuse">/singup.jsp</result>
+            <result name="login">/Index.jsp</result>
+        </action>
+        <!-- l action d 'afficher les profiles -->
+         <action name="profile" method="changer" class="action.Profile">
+            <result name="changer">/Profile.jsp</result>
+            <result name="fail">/home.jsp</result>
+             <result name="login">/Index.jsp</result>
+        </action>
+         <action name="ajouterpanier" method="ajouter" class="action.panier">
+         <result name="ajoute">/commande.jsp</result>
+         <result name="fail">/commande.jsp</result>
+         <result name="login">/Index.jsp</result>
+         </action>
+         
+         <action name="delete" method="supprimer" class="action.Deleteprod">
+         <result name="delete">/commande.jsp</result>
+         <result name="login">/Index.jsp</result>
+         </action>
+         <action name="passercommande" method="passerCommande" class="action.commander">
+           	<result name="commander">/payer.jsp</result>
+           	<result name="login">/Index.jsp</result>
+         </action>
+         <action name="logout" method="sortir" class="action.logout">
+         <result name="out">/Index.jsp</result>
+         </action>
+        <action name="telecharger" method="downloadPdf"  class="action.PdfAction">
+     <result name="success">/home.jsp</result>
+        </action>
+    </package>
+</struts>

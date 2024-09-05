@@ -1,0 +1,50 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Styles pour la table */
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th,.table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Styles pour le lien de téléchargement */
+form {
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Styles pour la section du prix total */
+div {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Styles pour le header inclus */
+
+/* Styles pour le contenu principal */
+main {
+    margin-top: 20px;
+}
+
+/* Ajoutez d'autres styles CSS selon vos besoins */
